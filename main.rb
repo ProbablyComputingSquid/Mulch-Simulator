@@ -68,7 +68,7 @@ end
 
 puts "Leaderboard:"
 puts "Total yards mulched:"
-puts "1: pureAWESOMNES0".blue.bg_cyan
+puts "2: pureAWESOMNES0".blue.bg_cyan
 #Start the game LOL
 puts "what is your repl.it username?"
 puts "For scoreboard"
@@ -251,11 +251,11 @@ end
 puts "You go up the mountain. 🗻🗻".red
 puts "You arrive at the house.".red
 printf "The person says, ".red
-puts "'Hello sir, I need 30 yards of red mulch for my home on this mountain.".cyan
+puts "'Hello #{user_name}, I need 30 yards of red mulch for my home on this mountain.".cyan
 
 
 
-puts "Do you mulch the yard?"
+puts "Do you mulch the yard?".red
 
 
 mulching2 = gets.chomp.upcase
@@ -266,9 +266,10 @@ if mulching2 == 'YES'
   puts "YAAYY!!!".red
   yards_of_red_mulch -= 30
   yardsMulched += 1
-  staimina -= 30
+  stamina -= 30
   puts "🎉🎉You got 1000 MULCH MONEY!🎉🎉".red.bg_cyan
-  if stamina =< 10
+  puts "You know have #{money} MULCH MONEY!!!"
+  if stamina <= 10
    puts "📯⚠⚠ Warning 📯⚠⚠".blink.red.bg_cyan
    puts "Your stamina is 10 or below".blink.red.bg_cyan
    puts "Your stamina reaching 0 or lower will result in death or extreme injuries.".blink.red.bg_cyan
@@ -282,10 +283,16 @@ else
   puts "YAAYY!!!".red
   yards_of_red_mulch -= 30
   yardsMulched += 1
-  staimina -= 30
+  stamina -= 30
   
   puts "🎉🎉You got 1000 MULCH MONEY!🎉🎉".red.bg_cyan
+  puts "You now have #{money} MULCH MONEY!".red
 end
 
 
 
+
+
+
+
+puts "You now have enogh money to hire some workers!".red
