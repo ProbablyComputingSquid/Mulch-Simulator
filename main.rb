@@ -45,8 +45,8 @@ printf ("Welcome to").bold.red.bg_green
 puts "                                               MULCH SIMULATOR!!!!".bold.red.bg_green
 puts "Version 1.3.1"
 puts "Remember to join my discord server: https://discord.com/invite/ccDVdqH".green
-puts "                           ⚠⚠Warning: This game is not for the faint of heart.⚠⚠".red.bg_blue
-puts "📯📯⚠⚠ This game does not save!📯⚠⚠".red.bg_cyan
+puts "                           ⚠ Warning: This game is not for the faint of heart. ⚠".red.bg_blue
+puts "⚠ This game does not save! ⚠".red.bg_cyan
 puts "this is a story game".upcase.green
 #CREDITS
 puts "CREDITS: pureAWESOMNES0 for code".cyan
